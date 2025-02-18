@@ -1,10 +1,12 @@
 "use client";
 
 import React from "react";
-import ReactApexChart from "react-apexcharts";
+// import ReactApexChart from "react-apexcharts";
 import firstMonth_logo from "../../../../public/greenIcon.png";
 import lastMonth_logo from "../../../../public/blueIcon.png";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
+const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 function Page() {
   const state = {

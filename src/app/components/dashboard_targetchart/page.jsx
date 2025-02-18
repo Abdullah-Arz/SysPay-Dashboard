@@ -1,11 +1,12 @@
 "use client"
 
 import React from "react";
-import ReactApexChart from "react-apexcharts";
+// import ReactApexChart from "react-apexcharts";
 import Image from "next/image";
 import realityIcon from "../../../../public/realityIcon.png";
 import targetIcon from "../../../../public/targetIcon.png";
-
+import dynamic from 'next/dynamic';
+const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 function page() {
 

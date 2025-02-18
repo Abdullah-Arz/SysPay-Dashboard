@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import ReactApexChart from 'react-apexcharts';
+// import ReactApexChart from 'react-apexcharts';
 import dynamic from "next/dynamic";
-// const ReactApexChart = dynamic(() => import("react-apexcharts"), {
-//   ssr: false,
-// });
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
 
 function page() {
