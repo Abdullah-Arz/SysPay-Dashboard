@@ -26,16 +26,16 @@ function Page() {
 
                 {/* Second Grid: Three Columns */}
                 <div className="flex flex-col md:flex-row md:flex-nowrap gap-4 mt-4 justify-between">
-    <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[38%] lg:w-[38%]">
-        <DashboardColumnChart />
-    </div>
-    <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[31%] lg:w-[31%]">
-        <DashboardAreaChart />
-    </div>
-    <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[31%] lg:w-[31%]">
-        <DashboardTargetChart />
-    </div>
-</div>
+                    <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[38%] lg:w-[38%]">
+                        <DashboardColumnChart />
+                    </div>
+                    <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[31%] lg:w-[31%]">
+                        <DashboardAreaChart />
+                    </div>
+                    <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[31%] lg:w-[31%]">
+                        <DashboardTargetChart />
+                    </div>
+                </div>
 
                 {/* Third Grid: Three Columns */}
                 <div className="flex flex-col md:flex-row md:flex-nowrap gap-4 mt-4 justify-between">

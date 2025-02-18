@@ -8,17 +8,14 @@ import dash_icon from "../../../../public/vector.png";
 import pro_logo from "../../../../public/pro_logo.png";
 import { BsChevronDown } from "react-icons/bs";
 import {
-  TbUsersGroup,
-  TbLayoutGrid,
   TbChevronRight,
-  TbUsersPlus,
   TbUserCheck,
-  TbUserX,
-  TbArticle,
+  TbMessage,
+  TbLogout,
 } from "react-icons/tb";
+import { FiSettings, FiBarChart2, FiShoppingBag, FiShoppingCart  } from "react-icons/fi";
 import { usePathname, useRouter } from 'next/navigation'
 import { IoMenu } from "react-icons/io5";
-import { AiOutlineSolution } from "react-icons/ai";
 function Page() {
 
   const [state_Open, setState_Opne] = useState(true);
@@ -28,13 +25,13 @@ function Page() {
   console.log('Current page ----- ', currentRoute)
 
   const Menus = [
-    { id: 1, title: "Leaderboard", icon: <TbLayoutGrid />, link: '/Leaderboard' },
-    { id: 2, title: "Order", icon: <TbUsersGroup />, link: '/lrder' },
-    { id: 3, title: "Products", icon: <TbUsersPlus />, link: '/products' },
+    { id: 1, title: "Leaderboard", icon: <FiBarChart2 />, link: '/Leaderboard' },
+    { id: 2, title: "Order", icon: <FiShoppingCart />, link: '/lrder' },
+    { id: 3, title: "Products", icon: <FiShoppingBag  />, link: '/products' },
     { id: 4, title: "Sales Report", icon: <TbUserCheck />, link: '/sales' },
-    { id: 5, title: "Messages", icon: <TbUserX />, link: '/messages' },
-    { id: 6, title: "Settings", icon: <AiOutlineSolution />, link: '/settings' },
-    { id: 7, title: "Sign Out", icon: <TbArticle />, link: '/signout' },
+    { id: 5, title: "Messages", icon: <TbMessage />, link: '/messages' },
+    { id: 6, title: "Settings", icon: <FiSettings />, link: '/settings' },
+    { id: 7, title: "Sign Out", icon: <TbLogout />, link: '/signout' },
   ];
   const HandleSidebar = () => {
     setState_Opne(!state_Open);
@@ -91,76 +88,76 @@ function Page() {
               />
           }
 
-<div  className="pt-2 -ml-5 w-full flex flex-col items-center justify-center gap-4"> 
-          <div className="w-full h-[44px] rounded-lg bg-[#1559ED] flex items-center justify-center gap-3 p-0 m-0">
-            <Image 
-            src={dash_icon}
+          <div className="pt-2 2xl:px-0 xl:px-0 lg:px-0 md:px-5 px-5 2xl:-ml-5 xl:-ml-5 lg:-ml-5 w-full flex flex-col items-center justify-center gap-4">
+            <div className="w-full h-[44px] rounded-lg bg-[#1559ED] flex items-center justify-center gap-3 p-0 m-0">
+              <Image
+                src={dash_icon}
                 alt="Dashboard Icon"
                 width={20}
                 height={20}
                 className="cursor-pointer block float-left mr-2"
-            />
-          <p className="text-white">Dashboard</p>   
-            
-          </div>
-        <ul>
-          {Menus.map((item, index) => (
-            <div key={index}>
-                <li
-                  key={item.id}
-                  onClick={() => HandleNavigate(item.link)}
-                  className={` ${currentRoute === item.link ? "text-sm text-[#000000] flex items-center gap-x-4 p-2 mt-4 cursor-pointer bg-transparent duration-100" : "text-sm text-[#737791] flex items-center border-0 gap-x-4 p-2 mt-4 cursor-pointer hover:text-[#000000] rounded-md duration-100"} `}
-                >
-                  {item.submenuitem ? (
-                    <>
-                      <span
-                        onClick={HandleSubMenu}
-                        className="text-2xl block float-left"
-                      >
-                        {item.icon}
-                      </span>
-                      <span
-                        onClick={HandleSubMenu}
-                        className={`text-sm font-medium flex-1 ${!state_Open && "hidden"
-                          }`}
-                      >
-                        {item.title}
-                      </span>
-                      <TbChevronRight
-                        onClick={HandleSubMenu}
-                        className={` ${state_OpenSubmenu && "rotate-90"}`}
-                      />
-                      {/* </div> */}
-                    </>
-                  ) : (
-                    <>
-                      <span className={`text-2xl block float-left ${!state_Open && "hidden sm:block md:block lg:block xl:block"} `}>
-                        {item.icon}
-                      </span>
-                      <span
-                        className={`text-sm font-medium flex-1 ${!state_Open && "hidden"
-                          }`}
-                      >
-                        {item.title}
-                      </span>
-                    </>
-                  )}
-                </li>
+              />
+              <p className="text-white ">Dashboard</p>
+
             </div>
-          ))}
-        </ul>
-        </div>
+            <ul>
+              {Menus.map((item, index) => (
+                <div key={index}>
+                  <li
+                    key={item.id}
+                    onClick={() => HandleNavigate(item.link)}
+                    className={` ${currentRoute === item.link ? "text-sm text-[#000000] flex items-center gap-x-4 p-2 mt-4 cursor-pointer bg-transparent duration-100" : "text-sm text-[#737791] flex items-center border-0 gap-x-4 p-2 mt-4 cursor-pointer hover:text-[#000000] rounded-md duration-100"} `}
+                  >
+                    {item.submenuitem ? (
+                      <>
+                        <span
+                          onClick={HandleSubMenu}
+                          className="text-2xl block float-left"
+                        >
+                          {item.icon}
+                        </span>
+                        <span
+                          onClick={HandleSubMenu}
+                          className={`text-sm font-medium flex-1 ${!state_Open && "hidden"
+                            }`}
+                        >
+                          {item.title}
+                        </span>
+                        <TbChevronRight
+                          onClick={HandleSubMenu}
+                          className={` ${state_OpenSubmenu && "rotate-90"}`}
+                        />
+                        {/* </div> */}
+                      </>
+                    ) : (
+                      <>
+                        <span className={`text-2xl block float-left ${!state_Open && "hidden sm:block md:block lg:block xl:block"} `}>
+                          {item.icon}
+                        </span>
+                        <span
+                          className={`text-sm font-medium flex-1 ${!state_Open && "hidden"
+                            }`}
+                        >
+                          {item.title}
+                        </span>
+                      </>
+                    )}
+                  </li>
+                </div>
+              ))}
+            </ul>
+          </div>
 
-        <Image 
+          <Image
             src={pro_logo}
-                alt="Pro Icon"
-                // width={100}
-                height={100}
-                className="w-full cursor-pointer block float-left mr-2"
-            />
+            alt="Pro Icon"
+            // width={100}
+            height={100}
+            className="w-full cursor-pointer block float-left mr-2 2xl:px-0 xl:px-0 lg:px-0 md:px-5 px-5"
+          />
 
         </div>
-          
+
       </div>
     </div>
   );

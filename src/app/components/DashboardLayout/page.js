@@ -9,7 +9,7 @@ function DashboardLayout({children}) {
   return (
     
     <div className="flex">
-    <div className='bg-white h-full'>
+    <div className='h-full'>
         <Sidebar />
     </div>
     <div className='flex-1'>

@@ -85,7 +85,7 @@ function Page() {
         height={190}
       />
 
-      <div className="border-b-2 border-gray-300" />
+      <div className="border-b-2 border-gray-150" />
       <div className="flex justify-center text-gray-700 mt-2 text-sm">
         <div className="flex items-start justify-start gap-3">
         <Image

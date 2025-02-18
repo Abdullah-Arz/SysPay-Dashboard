@@ -138,3 +138,7 @@ option:hover {
   background: transparent;
   margin-top: 10px;
 }
+
+.apexcharts-toolbar {
+  display: none !important;
+}

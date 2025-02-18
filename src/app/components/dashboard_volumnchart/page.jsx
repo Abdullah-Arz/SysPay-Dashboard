@@ -72,7 +72,7 @@ const page = () => {
         height={159}
       />
 
-      <div className="border-b-2 border-gray-300" />
+      <div className="border-b-2 border-gray-150" />
             <div className="flex justify-center text-gray-700 mt-2 text-sm">
               <div className="flex items-start justify-start gap-3">
               <span className="w-2 h-2 bg-blue-500 rounded-full mt-2"></span>
