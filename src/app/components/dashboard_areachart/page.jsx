@@ -87,6 +87,7 @@ function Page() {
       <div className="flex justify-center text-gray-700 mt-2 text-sm">
         <div className="flex items-start justify-start gap-3">
         <Image
+        alt='last month logo'
         src={lastMonth_logo}
         className='w-4 h-2 mt-[0.3rem]' 
         />
@@ -102,6 +103,7 @@ function Page() {
 
         <div className="flex items-start justify-start gap-3">
         <Image
+        alt="first month logo"
         src={firstMonth_logo}
         className='w-4 h-2 mt-[0.3rem]' 
         />
