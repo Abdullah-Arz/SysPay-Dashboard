@@ -1,16 +1,16 @@
 import React from "react";
 import DashboardLayout from "../components/DashboardLayout/page";
 import Dashboard_Card from "../components/dashboard_cards/page";
-import DashboardlineChart from '../components/dashboard_linechart/page';
-import DashboardColumnChart from '../components/dashboard_columnchart/page';
-import DashboardAreaChart from '../components/dashboard_areachart/page';
-import DashboardTargetChart from '../components/dashboard_targetchart/page';
+import VisitorsGraph from '../components/visitorsGraph/page';
+import RevenueGraph from '../components/revenueGraph/page';
+import SatisfactionGraph from '../components/satisfactionGraph/page';
+import SalesGraph from '../components/salesGraph/page';
 
 import TopProduct from '../components/top_product/page';
-import MappingChart from '../components/dashboard_mappingchart/page';
-import VolumnChart from '../components/dashboard_volumnchart/page';
+import MappingGraph from '../components/mappingGraph/page';
+import VolumnGraph from '../components/volumnGraph/page';
 
-function Page() {
+const Page = () => {
     return (
         <DashboardLayout>
             <>
@@ -20,20 +20,20 @@ function Page() {
                         <Dashboard_Card />
                     </div>
                     <div className="h-full shadow-md bg-white rounded-2xl p-4 md:w-[45%] lg:w-[45%]">
-                        <DashboardlineChart />
+                        <VisitorsGraph />
                     </div>
                 </div>
 
                 {/* Second Grid: Three Columns */}
                 <div className="flex flex-col md:flex-row md:flex-nowrap gap-4 mt-4 justify-between">
                     <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[38%] lg:w-[38%]">
-                        <DashboardColumnChart />
+                        <RevenueGraph />
                     </div>
                     <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[31%] lg:w-[31%]">
-                        <DashboardAreaChart />
+                        <SatisfactionGraph />
                     </div>
                     <div className="shadow-md bg-white rounded-2xl p-4 w-full md:w-[31%] lg:w-[31%]">
-                        <DashboardTargetChart />
+                        <SalesGraph />
                     </div>
                 </div>
 
@@ -43,10 +43,10 @@ function Page() {
                         <TopProduct />
                     </div>
                     <div className="h-full w-full md:w-[31%] lg:w-[31%]">
-                        <MappingChart />
+                        <MappingGraph />
                     </div>
                     <div className="h-full w-full md:w-[31%] lg:w-[31%]">
-                        <VolumnChart />
+                        <VolumnGraph />
                     </div>
                 </div>
             </>

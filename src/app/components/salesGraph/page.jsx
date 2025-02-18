@@ -8,17 +8,17 @@ import targetIcon from "../../../../public/targetIcon.png";
 import dynamic from 'next/dynamic';
 const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-function page() {
+const page = () => {
 
     const state = {
         series: [
             {
-                name: "Online Sales",
+                name: "Reality Sales",
                 data: [44, 55, 57, 56, 61, 58, 63],
                 color: '#4AB58E'
             },
             {
-                name: "Offline Sales",
+                name: "Target Sales",
                 data: [76, 45, 31, 98, 87, 15, 91],
                 color: '#FFCF00'
             }
@@ -102,7 +102,7 @@ function page() {
                     <div className="flex items-center space-x-3">
                         <Image src={targetIcon} width={40} height={40} alt="Target Sales" />
                         <div className="flex flex-col">
-                            <p className="text-black font-semibold text-sm">Reality Sales</p>
+                            <p className="text-black font-semibold text-sm">Target Sales</p>
                             <p className="text-gray-400 text-xs">Global</p>
                         </div>
                     </div>

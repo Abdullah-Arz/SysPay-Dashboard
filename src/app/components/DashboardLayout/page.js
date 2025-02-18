@@ -5,7 +5,7 @@ import Sidebar from '../sidebar/page';
 import Navbar from '../navbar/page';
 
 
-function DashboardLayout({children}) {
+const DashboardLayout = ({children}) => {
   return (
     
     <div className="flex">

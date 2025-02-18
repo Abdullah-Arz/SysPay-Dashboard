@@ -8,7 +8,7 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 });
 
 
-function page() {
+const page = () => {
 
   const state = {
     series: [

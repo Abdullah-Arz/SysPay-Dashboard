@@ -8,7 +8,7 @@ import Image from "next/image";
 import dynamic from 'next/dynamic';
 const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-function Page() {
+const page = () => {
   const state = {
     series: [
       {
@@ -121,4 +121,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default page;
