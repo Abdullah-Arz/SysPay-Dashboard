@@ -61,7 +61,7 @@ const page = () => {
     };
 
     return (
-        <div className="bg-white p-4 rounded-lg shadow-md w-full max-w-sm mx-auto">
+        <div className="bg-white p-4 rounded-lg shadow-md w-full">
             <h2 className="text-lg font-bold text-gray-900">
                 Volume vs Service Level
             </h2>
