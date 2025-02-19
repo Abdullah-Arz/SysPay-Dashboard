@@ -23,7 +23,7 @@ export const options = {
 
 export function page() {
     return (
-        <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg mx-auto">
+        <div className="bg-white p-6 rounded-lg shadow-md w-full">
             <h2 className="text-lg font-bold text-gray-900 mb-4">Sales Mapping by Country</h2>
             <Chart
                 chartType="GeoChart"
