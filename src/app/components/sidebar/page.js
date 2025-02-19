@@ -153,7 +153,9 @@ function Page() {
             alt="Pro Icon"
             // width={100}
             height={100}
-            className="w-full cursor-pointer block float-left mr-2 2xl:px-0 xl:px-0 lg:px-0 md:px-5 px-5"
+            className="w-full cursor-pointer block float-left mr-2 2xl:px-0 xl:px-0 lg:px-0 md:px-5 px-5 object-cover"
+            unoptimized 
+            priority 
           />
 
         </div>
