@@ -74,8 +74,8 @@ function Page() {
                 className="cursor-pointer block float-left mr-2"
               /> :
               <Image
-                src={icon_half}
-                alt="Connect Pro Icon"
+                src={sidebar_logo}
+                alt="SysPay Icon"
                 width={0}
                 height={0}
                 sizes="100vw"
