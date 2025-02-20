@@ -16,11 +16,10 @@ Tech Stack Used:
 
 1. Next Js. v14.0.1
 2. Tailwind css
-3. Next UI
 
-4. GitHub Repository Link: https://github.com/Abdullah-Arz/SysPay-Dashboard.git
+3. GitHub Repository Link: https://github.com/Abdullah-Arz/SysPay-Dashboard.git
 
-5. Deploy On Vercel 
+4. Deploy On Vercel 
 
 Link: https://sys-pay-dashboard.vercel.app/
 	
